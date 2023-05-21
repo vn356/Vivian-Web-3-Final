@@ -322,6 +322,23 @@ template {
 /* =============
     Base
 ============= */
+.container {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". content .";
+}
+@media (min-width: 1200px) {
+  .container {
+    display: grid;
+    grid-template-columns: 64px auto 64px;
+    grid-template-areas: ". content .";
+  }
+}
+
+.content {
+  grid-area: content;
+}
+
 /* =============
     Typography
 ============= */

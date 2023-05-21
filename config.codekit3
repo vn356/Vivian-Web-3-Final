@@ -50,19 +50,6 @@
       "oAP" : "\/deploy\/html\/thank.html",
       "oF" : 0
     },
-    "\/deploy\/img\/chonk.png" : {
-      "ft" : 32768,
-      "iS" : 1088557,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/chonk.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/deploy\/img\/closeup\/close1.png" : {
       "ft" : 32768,
       "iS" : 78656,
@@ -115,6 +102,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/icons\/bigmail.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/icons\/bigmail.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/icons\/burgermenu.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -130,16 +127,6 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/deploy\/img\/icons\/cart.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/deploy\/img\/icons\/carthover.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/deploy\/img\/icons\/carthover.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -195,16 +182,6 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/icons\/circleactive.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/deploy\/img\/icons\/circleactive.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
     "\/deploy\/img\/icons\/edit.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -235,16 +212,6 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/icons\/hearthover.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/deploy\/img\/icons\/hearthover.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
     "\/deploy\/img\/icons\/instagram.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -255,31 +222,11 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/icons\/instagramhover.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/deploy\/img\/icons\/instagramhover.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
     "\/deploy\/img\/icons\/mail.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/deploy\/img\/icons\/mail.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/deploy\/img\/icons\/mailhover.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/deploy\/img\/icons\/mailhover.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -305,31 +252,11 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/icons\/personhover.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/deploy\/img\/icons\/personhover.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
     "\/deploy\/img\/icons\/phone.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/deploy\/img\/icons\/phone.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/deploy\/img\/icons\/phonehover.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/deploy\/img\/icons\/phonehover.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -350,16 +277,6 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/deploy\/img\/icons\/radio.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/deploy\/img\/icons\/radiohover.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/deploy\/img\/icons\/radiohover.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -450,16 +367,6 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/deploy\/img\/icons\/youtube.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/deploy\/img\/icons\/youtubehover.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/deploy\/img\/icons\/youtubehover.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,

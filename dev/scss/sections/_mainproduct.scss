@@ -4,12 +4,12 @@
 
 
 
-section.main{
+.main{
     background-color: aqua;
 
     .content{
-        img.saw{
-            width: fit-content;
+        img{
+            max-width: 100%; ;
         }
     }
 

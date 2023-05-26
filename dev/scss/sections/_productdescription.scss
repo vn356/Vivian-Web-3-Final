@@ -1,3 +1,172 @@
 /* =============
     Product Description
 ============= */
+
+
+
+.descopen{
+
+   margin-top: 48px;
+   margin-bottom: 48px;
+
+   h4{
+
+    color: $black;
+    font-family:"Manrope", sans-serif;
+    font-size: 16px; 
+}
+
+
+  
+
+}
+
+
+
+.minibox{
+    background-color: $peach;
+    width: 80%;
+
+    display: flex;
+    line-height: 24px;
+
+
+    border: 1px solid $darker-orange;
+
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "d1 d2";
+
+
+    .descname{
+        grid-area: d1;
+    }
+
+    .descarrow{
+        grid-area: d2;
+        margin-right: auto
+    }
+
+  
+    
+}
+
+
+.textbox{
+    background-color: $white;
+    border: 2px solid $darker-orange;
+    padding: 24px 8px 32px 8px;
+
+
+    p{
+        
+        color: $black;
+        font-family:"Manrope", sans-serif;
+        font-size: 14px; 
+    }
+
+    li{
+        color: $black;
+        font-family:"Manrope", sans-serif;
+        font-size: 14px; 
+
+    }
+
+    
+
+}
+
+
+
+
+.miniboxclose{
+    background-color: $dark-orange;
+    width: 80%;
+
+    display: flex;
+    line-height: 24px;
+
+
+    border: 1px solid $darker-orange;
+
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "d1 d2";
+
+}
+
+
+.boxhidden{
+    display: none;
+
+}
+
+
+
+
+
+.moreabout{
+
+    padding-top: 24px;
+    padding-bottom: 8px;
+    margin-bottom: 32px;
+    border-bottom: 2px solid $darker-orange;
+
+    background-color: $gray-peach;
+
+    h3{
+        color: $black;
+        font-family:"Mukta", sans-serif;
+        font-size: 20px; 
+    }
+
+
+    hr.new1{
+        border: 1px solid $darker-orange;
+        margin-top: 8px;
+        margin-bottom: 24px;
+    }
+
+    img{
+        max-width: 100%;
+        border: 2px solid $darker-orange;
+        border-radius: 2px;
+        
+
+
+    }
+
+   ul{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    ". p1 ."
+    ". p2 ."
+    ". p3 ."
+    "p4 p4 p4"
+    ;
+   }
+
+   .handle{
+    grid-area: p1;
+   }
+
+   .blade{
+    grid-area: p2;
+   }
+
+   .length{
+    grid-area: p3;
+   }
+
+   .full{
+    grid-area: p4;
+   
+   }
+
+}

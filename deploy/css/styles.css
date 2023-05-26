@@ -322,6 +322,10 @@ template {
 /* =============
     Base
 ============= */
+.bg {
+  background-color: #F1EEED;
+}
+
 .large-images {
   width: 100%;
   display: block;
@@ -444,6 +448,31 @@ textarea {
 /* =============
     Navigation
 ============= */
+.nav {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .nav {
+    display: initial;
+    display: flex;
+    justify-content: center;
+    grid-gap: 48px;
+  }
+}
+
+.nav-button {
+  background-color: #CA9B80;
+  border: 1px solid #281407;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  color: #000;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+}
+
 /* =============
     Header
 ============= */
@@ -502,19 +531,175 @@ footer div.footer-icons a img {
 /* =============
     Main Product
 ============= */
-section.main {
+.main {
   background-color: aqua;
 }
-section.main .content img.saw {
-  width: fit-content;
+.main .content img {
+  max-width: 100%;
 }
 
 /* =============
     Other Products
 ============= */
+.otherproducts {
+  background-color: #C2ADA1;
+  border-bottom: 2px solid #9E5C43;
+  padding-top: 24px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.otherproducts .content h3 {
+  color: #000;
+  font-family: "Mukta", sans-serif;
+  font-size: 20px;
+}
+.otherproducts .content hr.new1 {
+  border: 1px solid #9E5C43;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+.otherproducts .content ul {
+  text-align: center;
+}
+.otherproducts .content ul li p {
+  display: flex;
+  color: #000;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  margin-left: 16px;
+}
+.otherproducts .content ul li div.stars3 {
+  display: flex;
+  line-height: 20px;
+  margin-top: 8px;
+  margin-left: 16px;
+}
+.otherproducts .content ul .tenon {
+  display: none;
+}
+.otherproducts .content ul .tenon2 {
+  display: none;
+}
+.otherproducts .content div.pagenumber {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+  margin-top: 32px;
+}
+.otherproducts .content div.pagenumber p {
+  color: #000;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.otherproducts .content div.pagenumber span.a {
+  margin-right: 24px;
+}
+
 /* =============
     Product Description
 ============= */
+.descopen {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+.descopen h4 {
+  color: #000;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+}
+
+.minibox {
+  background-color: #E0B59D;
+  width: 80%;
+  display: flex;
+  line-height: 24px;
+  border: 1px solid #9E5C43;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "d1 d2";
+}
+.minibox .descname {
+  grid-area: d1;
+}
+.minibox .descarrow {
+  grid-area: d2;
+  margin-right: auto;
+}
+
+.textbox {
+  background-color: #fff;
+  border: 2px solid #9E5C43;
+  padding: 24px 8px 32px 8px;
+}
+.textbox p {
+  color: #000;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+}
+.textbox li {
+  color: #000;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+}
+
+.miniboxclose {
+  background-color: #B16D54;
+  width: 80%;
+  display: flex;
+  line-height: 24px;
+  border: 1px solid #9E5C43;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "d1 d2";
+}
+
+.boxhidden {
+  display: none;
+}
+
+.moreabout {
+  padding-top: 24px;
+  padding-bottom: 8px;
+  margin-bottom: 32px;
+  border-bottom: 2px solid #9E5C43;
+  background-color: #DED2CC;
+}
+.moreabout h3 {
+  color: #000;
+  font-family: "Mukta", sans-serif;
+  font-size: 20px;
+}
+.moreabout hr.new1 {
+  border: 1px solid #9E5C43;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+.moreabout img {
+  max-width: 100%;
+  border: 2px solid #9E5C43;
+  border-radius: 2px;
+}
+.moreabout ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: ". p1 ." ". p2 ." ". p3 ." "p4 p4 p4";
+}
+.moreabout .handle {
+  grid-area: p1;
+}
+.moreabout .blade {
+  grid-area: p2;
+}
+.moreabout .length {
+  grid-area: p3;
+}
+.moreabout .full {
+  grid-area: p4;
+}
+
 /* =============
     Reviews
 ============= */
@@ -569,6 +754,7 @@ section.main .content img.saw {
   background-color: #F1EEED;
   border: 3px solid #AC8D7B;
   border-radius: 3px;
+  margin-bottom: 24px;
   padding: 12px 16px;
 }
 .reviews .content .review-box h4 {
@@ -619,4 +805,62 @@ section.main .content img.saw {
 }
 .reviews .content div.pagenumber span.a {
   margin-right: 24px;
+}
+
+.fromcustomer {
+  background-color: #DED2CC;
+  padding-top: 8px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #9E5C43;
+}
+.fromcustomer .content h3 {
+  color: #000;
+  font-family: "Mukta", sans-serif;
+  font-size: 20px;
+}
+.fromcustomer .content hr.new1 {
+  border: 1px solid #9E5C43;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+.fromcustomer .content img {
+  max-width: 100%;
+}
+.fromcustomer .content .imgig {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "i1 i2" "i4 i4";
+}
+.fromcustomer .content .imgig .karl {
+  grid-area: i1;
+  margin-right: 8px;
+}
+.fromcustomer .content .imgig .karl p {
+  color: #000;
+  font-family: "Mukta", sans-serif;
+  font-size: 14px;
+}
+.fromcustomer .content .imgig .cedar {
+  grid-area: i2;
+  margin-right: 8px;
+}
+.fromcustomer .content .imgig .cedar p {
+  color: #000;
+  font-family: "Mukta", sans-serif;
+  font-size: 14px;
+}
+.fromcustomer .content .imgig .valley {
+  display: none;
+}
+.fromcustomer .content .imgig .tagus {
+  grid-area: i4;
+  margin-top: 16px;
+}
+.fromcustomer .content .imgig .tagus p {
+  background-color: #E0B59D;
+  color: #000;
+  font-family: "Mukta", sans-serif;
+  font-size: 14px;
+  padding: 8px;
+  filter: drop-shadow(0px 4px 4px #000);
 }

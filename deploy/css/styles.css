@@ -322,12 +322,17 @@ template {
 /* =============
     Base
 ============= */
+.large-images {
+  width: 100%;
+  display: block;
+}
+
 .container {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". content .";
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .container {
     display: grid;
     grid-template-columns: 64px auto 64px;
@@ -339,12 +344,85 @@ template {
   grid-area: content;
 }
 
+@media (min-width: 390px) {
+  body {
+    background-color: green;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    background-color: purple;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    background-color: indianred;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    background-color: peru;
+  }
+}
+@media (min-width: 1400px) {
+  body {
+    background-color: blue;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+
 /* =============
     Typography
 ============= */
 /* =============
     Buttons
 ============= */
+.drop {
+  background-color: #fff;
+  color: #000;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  border: 2px solid #B16D54;
+  border-radius: 2px;
+  padding: 8px 24px;
+}
+.drop img {
+  justify-self: center;
+}
+
+.mini-search {
+  background-color: #fff;
+  color: #000;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  width: 100%;
+  border: 2px solid #B16D54;
+  border-radius: 2px;
+  padding: 8px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.review-button {
+  background-color: #B16D54;
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  width: 100%;
+  border: 2px solid #281407;
+  border-radius: 2px;
+  padding: 8px;
+  margin-bottom: 32px;
+}
+
 /* =============
     Forms
 ============= */
@@ -372,3 +450,173 @@ textarea {
 /* =============
     Footer
 ============= */
+footer {
+  background-color: #E0B59D;
+  padding: 48px 16px 32px 16px;
+}
+footer ul div.about li {
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  padding-bottom: 24px;
+}
+footer ul div.order {
+  padding-top: 16px;
+}
+footer ul div.order li {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  padding-bottom: 24px;
+}
+footer form {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: flex-start;
+}
+footer form input {
+  color: #000;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-style: bold;
+  width: 100%;
+  border: 2px solid #B16D54;
+  border-radius: 2px;
+  padding: 12px;
+}
+footer form .signup-button {
+  background-color: #B16D54;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 2px;
+  padding: 12px 48px 12px 48px;
+  margin-top: 32px;
+}
+footer div.footer-icons {
+  margin-top: 24px;
+}
+footer div.footer-icons a img {
+  margin-right: 16px;
+}
+
+/* =============
+    Main Product
+============= */
+section.main {
+  background-color: aqua;
+}
+section.main .content img.saw {
+  width: fit-content;
+}
+
+/* =============
+    Other Products
+============= */
+/* =============
+    Product Description
+============= */
+/* =============
+    Reviews
+============= */
+.reviews {
+  background-color: #DED2CC;
+  padding-top: 16px;
+}
+.reviews .content h2 {
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  color: #000;
+}
+.reviews .content hr.new1 {
+  border: 1px solid #9E5C43;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+.reviews .content div.rating-star {
+  margin-bottom: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "a1 a2";
+}
+.reviews .content div.rating-star p {
+  font-family: "Mukta", sans-serif;
+  font-size: 16x;
+  color: #000;
+}
+.reviews .content div.rating-star .starrating {
+  grid-area: a1;
+}
+.reviews .content div.rating-star .stars5 {
+  grid-area: a2;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: end;
+}
+.reviews .content .dropdowns {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "b1 b2";
+}
+.reviews .content .dropdowns .leftstar {
+  grid-area: b1;
+}
+.reviews .content .dropdowns .rightrecent {
+  grid-area: b2;
+}
+.reviews .content .review-box {
+  background-color: #F1EEED;
+  border: 3px solid #AC8D7B;
+  border-radius: 3px;
+  padding: 12px 16px;
+}
+.reviews .content .review-box h4 {
+  color: #000;
+  font-family: "Mukta", sans-serif;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+.reviews .content .review-box div.stars1 {
+  display: flex;
+  margin-bottom: 32px;
+}
+.reviews .content .review-box h5 {
+  color: #000;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.reviews .content .review-box p {
+  color: #000;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.reviews .content .review-box div.thumbs {
+  display: flex;
+  justify-content: end;
+  line-height: 48px;
+}
+.reviews .content .review-box div.thumbs p {
+  margin: 0;
+  padding-right: 20px;
+}
+.reviews .content div.pagenumber {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+  margin-top: 32px;
+}
+.reviews .content div.pagenumber p {
+  color: #000;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.reviews .content div.pagenumber span.a {
+  margin-right: 24px;
+}

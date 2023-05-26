@@ -1,3 +1,80 @@
 /* =============
     Footer
 ============= */
+
+
+footer{
+    background-color: $peach;
+    padding: 48px 16px 32px 16px;
+    
+
+
+    ul{
+        
+
+        div.about{
+            li{
+                font-family: "Manrope" , sans-serif;
+                font-size: 15px;
+                padding-bottom: 24px;
+            }
+
+        }
+
+        div.order{
+            padding-top: 16px;
+            li{
+                font-family: "Manrope" , sans-serif;
+                font-size: 16px;
+                padding-bottom: 24px;
+            }
+            
+        }
+    }
+
+    form{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: flex-start;
+
+
+        input{
+             color: $black;
+             font-family:"Manrope", sans-serif;
+             font-size: 16px;
+             font-style: bold;
+             width: 100%;
+
+             border: 2px solid $dark-orange;
+             border-radius: 2px;
+             padding: 12px;
+        
+            
+         }
+
+         .signup-button{
+            background-color: $dark-orange;
+            font-family:"Manrope", sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            color: $white;
+            border-radius: 2px;
+            
+            padding: 12px 48px 12px 48px;
+            margin-top: 32px;
+          
+       
+        }
+    }
+
+    div.footer-icons{
+        margin-top: 24px;
+
+        a{
+            img{
+                margin-right: 16px
+            }
+        }
+    }
+
+}

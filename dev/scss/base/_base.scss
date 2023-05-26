@@ -3,6 +3,14 @@
 ============= */
 
 
+
+.large-images{
+    width: 100%;
+    display: block;
+}
+
+
+
 .container{
     display:grid;
     grid-template-columns: 16px auto 16px;
@@ -13,7 +21,7 @@
  
    
 
-    @include xl{
+    @include xxl{
         display:grid;
         grid-template-columns: 64px auto 64px;
         grid-template-areas: 
@@ -25,3 +33,52 @@
 .content{
     grid-area: content;
 }
+
+
+
+@include sm{
+    body{
+        background-color: green;
+    }   
+    }
+    
+@include md{
+    body{
+        background-color: purple;
+    }
+    }
+    
+@include lg{
+    body{
+        background-color: indianred;
+    }
+    }
+    
+ @include xl{
+        body{
+            background-color: peru;
+    }
+    }
+    
+ @include xxl{
+         body{
+            background-color: blue;
+    }
+    }
+    
+
+    * {
+        margin: 0;
+        padding: 0;
+        }
+    
+    
+    
+    ul{
+    
+        li{
+            list-style: none;
+            margin-bottom: 8px;
+        }
+    }
+    

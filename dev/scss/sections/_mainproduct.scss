@@ -1,3 +1,16 @@
 /* =============
     Main Product
 ============= */
+
+
+
+section.main{
+    background-color: aqua;
+
+    .content{
+        img.saw{
+            width: fit-content;
+        }
+    }
+
+}

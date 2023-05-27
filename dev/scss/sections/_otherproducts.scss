@@ -7,11 +7,28 @@
 
 .otherproducts{
 
+    @include xl{
+        background-color: $gray-peach;
+        border: none;
+        margin-bottom: 0;
+        padding-bottom: 108px;
+
+    }
+    
+
     background-color: $gray-orange;
     border-bottom: 2px solid $darker-orange;
     padding-top: 24px;
     margin-top: 32px;
     margin-bottom: 32px;
+
+    ul{
+    
+        li{
+            list-style: none;
+            margin-bottom: 8px;
+        }
+    }
 
 
     .content{
@@ -29,6 +46,11 @@
         }
 
         ul{
+
+           
+
+            
+
             text-align: center;
 
             
@@ -56,11 +78,11 @@
                     margin-left: 16px;
 
                 }
-                
+
+               
             }
 
-
-
+            @include sm{
                 .tenon{
                     display: none;
                 }
@@ -68,6 +90,39 @@
                 .tenon2{
                     display: none;
                 }
+            }
+            
+
+            @include xl{
+                padding-top: 72px;
+
+                display: flex;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas: 
+                "tt1 tt2 tt3 tt4";
+
+               justify-content: space-between;
+
+                .dovetail{
+                    grid-area: tt1;
+                }
+
+                .carcass{
+                    grid-area: tt2;
+                }
+
+                .tenon{
+                    display: initial;
+                    grid-area: tt3;
+                }
+
+                .tenon2{
+                    display: initial;
+                    grid-area: tt4;
+                }
+            }
+
+            
         }
 
 
@@ -93,6 +148,11 @@
             span.a{
                 margin-right: 24px;
     
+            }
+
+            @include xl{
+                display: none;
+
             }
         }
 

@@ -5,12 +5,132 @@
 
 
 .main{
-    background-color: aqua;
+    background-color: $gray-peach;
+    padding-top: 24px;
+  
+
+ 
 
     .content{
         img{
             max-width: 100%; ;
         }
+
+
+        div.circle-icon{
+            display: flex;
+            justify-content: center;
+
+            margin-bottom: 24px;
+            margin-top: 16px;
+            
+
+            img{
+                margin-right: 12px;
+            }
+        }
+
+
+        .hiddenimg{
+            display: none;
+        }
+
+    
+
+        h3{
+            color: $black;
+            font-family:"Mukta", sans-serif;
+            font-size: 20px; 
+        }
+
+
+        div.starsrate{
+            display: flex;
+
+            margin-top: 12px;
+            margin-bottom: 24px;
+
+            p{
+                color: $black;
+                font-family:"Manrope", sans-serif;
+                font-size: 16px; 
+            }
+
+        }
+
+
+
+        div.pricetag{
+
+            margin-bottom: 16px;
+            
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: auto;
+            
+            h2{
+                color: $black;
+                font-family:"Mukta", sans-serif;
+                font-size: 28px; 
+                
+            }
+
+            
+            img{
+                margin-left: auto;
+
+            }
+
+            
+
+        }
+
+        hr.new1{
+            border: 1px solid $darker-orange;
+           
+        }
+
+
+        li{
+         
+                color: $black;
+                font-family:"Mukta", sans-serif;
+                font-size: 14px; 
+
+                margin: 16px;
+        }
+
+
+        .quant{
+            width: 50%;
+            margin-bottom: 16px;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: auto;
+
+
+            img.left{
+                margin-right: auto;
+            }
+
+            img.right{
+                margin-left: auto;
+            }
+        }
+
+        
+
+
     }
 
+
+
+
+}
+
+
+hr.new2{
+    border: 1px solid $darker-orange;
+   
 }

@@ -6,10 +6,41 @@
 footer{
     background-color: $peach;
     padding: 48px 16px 32px 16px;
-    
+
+    @include xl{
+        padding-left: 24px;
+        padding-right: 24px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "l1 l2 l3";
+
+        .about{
+            grid-area: l1;
+        }
 
 
+        .middle2{
+            grid-area: l2;
+        }
+
+        .forms{
+            grid-area: l3;
+        }
+
+    }
+  
     ul{
+    
+        li{
+            list-style: none;
+            margin-bottom: 8px;
+        }
+    }
+
+
+    
+        
         
 
         div.about{
@@ -30,7 +61,7 @@ footer{
             }
             
         }
-    }
+    
 
     form{
         display: flex;
@@ -65,6 +96,12 @@ footer{
           
        
         }
+
+
+        @include xl{
+
+            justify-content: end;
+        }
     }
 
     div.footer-icons{
@@ -74,6 +111,12 @@ footer{
             img{
                 margin-right: 16px
             }
+        }
+
+        @include xl{
+            display: flex;
+            flex-flow: wrap;
+            justify-content: end;
         }
     }
 

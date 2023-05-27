@@ -9,7 +9,100 @@
     background-color: $gray-peach;
     padding-top: 16px;
 
+       ul{
+    
+        li{
+            list-style: none;
+            margin-bottom: 8px;
+        }
+    }
+
     .content{
+
+
+        .numberstar{
+            @include xl{
+                display: flex;
+                p{
+                    font-family: "Manrope" , sans-serif;
+                    font-size: 38px;
+                    color: $black;
+
+                }
+
+            }
+        }
+
+        .dropbuttons{
+            @include xl{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas: 
+                "cc1 cc2 . cc4";
+
+                gap: 1em;
+
+
+                .dropdowns{
+                    grid-area: cc1;
+                }
+
+                .search2{
+                    grid-area: cc2;
+                }
+
+               
+
+                .buttonreview{
+                    grid-area: cc4;
+                    display: flex;
+                    justify-content: end;
+                }
+
+
+
+            }
+        }
+
+
+        
+        ul{
+            @include xl{
+                margin-top: 32px;
+                
+
+            display: grid;
+            grid-gap: 2em;
+
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 
+            "rb1 rb2"
+            "rb3 rb4"
+            ;
+
+
+            .david{
+                grid-area: rb1;
+            }
+
+            .rachel{
+                grid-area: rb2;
+            }
+
+            .rick{
+                grid-area: rb3;
+            }
+
+            .charles{
+                grid-area: rb4;
+            }
+
+         
+        }
+
+        }
+
+       
 
     h2{
         font-family: "Manrope" , sans-serif;
@@ -79,10 +172,18 @@
         }
     }
 
-
+    
 
 
     .review-box{
+
+        @include xl{
+        }
+         
+
+
+
+
         background-color: $slight-white;
         border: 3px solid $dull-brown;
         border-radius: 3px;

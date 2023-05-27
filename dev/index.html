@@ -17,7 +17,7 @@
 
     
 <!--HEADER-->
-<header class="container">
+<!--<header class="container">
   <div class="content">
     <img src="img/icons/burgermenu.svg" alt="menu icon">
     <img src="img/logo/lienielsen.svg" alt="lie nielsen logo">
@@ -32,19 +32,57 @@
     </div>
 
   </div>
+</header>-->
+
+
+<header class="container">
+  <div class="content">
+      <div class="logo">
+        <img src="img/logo/lienielsen.svg" alt="lie nielsen logo">
+      </div>
+
+      <!-- Mobile Nav Icon, Won't Display on Desktop & Up-->
+      <div class="burger-container">
+          <button id="burger-btn">
+            <img src="img/icons/burgermenu.svg" alt="menu icon">
+          </button>
+      </div>
+<!-- End Mobile Nav Icon -->
+    
+      
+      
+      <!-- Menu Alters Between Mobile/Tablet & Desktop-->
+      <nav id="main-menu">
+          <div class="hide-for-lg">
+              <button id="close-btn">
+                <img src="img/icons/x.svg" alt="menu icon">
+              </button> 
+          </div>
+          <ul>
+              <li><a href="#">Link 1</a></li>
+              <li><a href="second.html">Link 2</a></li>
+              <li><a href="third.html">Link 3</a></li>
+              <li><a href="../index.html">Link 4</a></li>
+          </ul>
+      </nav>
+  </div>
 </header>
 
 
 
 
+
+
+
+
 <!--NAVIGATION-->
-<seciton class="nav">
+<div class="nav">
   <button class="nav-button">Hand Tools</button>
   <button class="nav-button">Sharpening & Tool Care</button>
   <button class="nav-button">Workbenche</button>
   <button class="nav-button">Education</button>
 
-</seciton>
+</div>
 
 
 <!--MAIN PRODUCT-->
@@ -56,14 +94,14 @@
     <div class="content">
     <img class="large-images" src="img/main/saw1.png" alt="saw image">
     <div class="circle-icon">
-      <img src="img/icons/circle.svg" alt="circle button for image">
+      <img src="img/icons/circleactive.svg" alt="circle button for image">
       <img src="img/icons/circle.svg" alt="circle button for image">
       <img src="img/icons/circle.svg" alt="circle button for image">
       <img src="img/icons/circle.svg" alt="circle button for image">
     </div>
 
 
-    <div>
+    <div class="hiddenimg">
       <img src="img/main/saw2.png" alt="holding saw">
       <img src="img/main/saw3.png" alt="saw on table">
       <img src="img/main/saw4.png" alt="saw on ground">
@@ -74,7 +112,7 @@
 
     <h3>Dovetail Saw with Cherry Handle</h3>
 
-    <div>
+    <div class="starsrate">
       <img src="img/icons/star.svg" alt="yellow star">
       <img src="img/icons/star.svg" alt="yellow star">
       <img src="img/icons/star.svg" alt="yellow star">
@@ -83,40 +121,40 @@
       <p>(9)</p>
     </div>
 
-    <div>
+    <div class="pricetag">
       <h2>$175</h2>
       <img src="img/icons/heart.svg" alt="heart icon">
     </div>
     
-    <hr>
+    <hr class="new1">
 
-    <ul>
+  <ul>
       <li>
-        <p>Equipped with a native hardwood cherry handle built for optimal grip</p>
+        Equipped with a native hardwood cherry handle built for optimal grip
       </li>
       <li>
-        <p>Blade made from high quality Swedish Steel blade</p>
+       Blade made from high quality Swedish Steel blade
       </li>
       <li>
-        <p>Tapered blade which makes it easier for maneuvering</p>
+        Tapered blade which makes it easier for maneuvering
       </li>
-    </ul>
+  </ul>
+    
+      <button class="drop quant"><img class="left" src="img/icons/chevrondown.svg" alt="down arrow">1<img class="right" src="img/icons/chevronup.svg" alt="up arrow"></button>
 
-    <div>
-      <img src="img/icons/chevrondown.svg" alt="down arrow">
-      <button>1</button>
-      <img src="img/icons/chevronup.svg" alt="up arrow">
-    </div>
+  
 
 
     <div>
-      <button>Add to Cart</button>
+      <button class="addcart">Add to Cart</button>
     </div>
 
-    <hr>
-</div>
+  </div>
 
 </section>
+
+    <hr class="new2">
+
 
 <!--DESCRIPTION-->
 
@@ -140,7 +178,7 @@
         Teeth are set at .003" per side for a .026" kerf — narrow to help you cut straight.</p>
         
  
-
+        <ul>
           <li>15 ppi rip.</li>
           <li>Length, including handle, is 15", with an overall height of 4¼" .</li>
           <li>Useable blade dimensions are 10" long by 1-5/8" deep x .020" thick.</li>
@@ -148,6 +186,7 @@
           <li>Materials are hand-crafted for perfect precision and quality</li>
           <li>Saw teeth have a minimum set that prevents binding while ensuring straight cut</li>
           <li>Sturdy and long lasting blade</li>
+        </ul>  
 
    
     </div>
@@ -383,6 +422,8 @@
   <h2>9 REVIEWS</h2>
   <hr class="new1">
 
+<div>
+  <div class="numberstar">
   <div class="rating-star">
     <p class="starrating">4.5 / 5 stars</p>
     <div class="stars5">
@@ -393,34 +434,42 @@
       <img src="img/icons/starhalf.svg" alt="half star">
     </div>
   </div>
+  </div>
 
 
 
 <!--Drop downs-->
-<div class="dropdowns">
-  <button class="drop leftstar">5 stars<img src="img/icons/chevrondown.svg" alt="down arrow"></button>
+<div class="dropbuttons">
+    <div class="dropdowns">
+      <div>
+        <button class="drop leftstar">5 stars<img src="img/icons/chevrondown.svg" alt="down arrow"></button>
+      </div>
+      <div>
+        <button class="drop rightrecent">Most Recent<img src="img/icons/chevrondown.svg" alt="down arrow"></button>
+      </div>
+  
+      </div>
 
-  <button class="drop rightrecent">Most Recent<img src="img/icons/chevrondown.svg" alt="down arrow"></button>
-</div>
+    <div class="search2">
+      <button class="mini-search">Search</button>
+    </div>
 
+    <div>
+    
 
-<button class="mini-search">Search</button>
+      <div class="buttonreview">
+        <button class="review-button" type="button">Write a Review</button>
+      </div>
 
-
-<div>
- 
-
-  <div>
-    <button class="review-button" type="button">Write a Review</button>
+    </div>
   </div>
-
 </div>
 
 
 
 <!--Actual reviews-->
   <ul>
-    <li class="review-box">
+    <li class="review-box david">
       <h4>David B.</h4>
       <div class="stars1">
         <img src="img/icons/star.svg" alt="yellow star">
@@ -444,7 +493,7 @@
     </li>
 
 
-    <li class="review-box">
+    <li class="review-box rachel">
       <h4>Rachel S.</h4>
       <div class="stars1">
         <img src="img/icons/star.svg" alt="yellow star">
@@ -464,7 +513,7 @@
     </li>
 
 
-    <li class="review-box">
+    <li class="review-box rick">
       <h4>Rick Y.</h4>
       <div class="stars1">
         <img src="img/icons/star.svg" alt="yellow star">
@@ -483,7 +532,7 @@
     </li>
 
 
-    <li class="review-box">
+    <li class="review-box charles">
       <h4>Charles G.</h4>
       <div class="stars1">
         <img src="img/icons/star.svg" alt="yellow star">
@@ -527,22 +576,27 @@
 <!--FOOTER-->
 
 <footer>
-  <ul>
+  
     <div class="about">
+      <ul>
       <li>About Us</li>
       <li>Contact Us</li>
       <li>Terms & Privacy Policy</li>
       <li>Support</li>
+    </ul>
+      
     </div>
     <div class="order">
+      <ul>
       <li>Order Information</li>
       <li>Shipping FAQ</li>
       <li>Orders & Returns</li>
       <li>Downloads</li>
+    </ul>
     </div>
-  </ul>
+ 
 
-
+<div class="forms">
   <div>
     <form action="#">
       <input class="input" type="text" placeholder="Enter your e-mail address" name="mail" required>
@@ -559,7 +613,7 @@
     <a href="#"> <img src="img/icons/instagram.svg" alt="instagram icon"></a>
     <a href="#"> <img src="img/icons/youtube.svg" alt="youtube icon"></a>
   </div>
-
+</div>
 
 
 

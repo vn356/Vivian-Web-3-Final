@@ -48,12 +48,52 @@
 
     .descarrow{
         grid-area: d2;
-        margin-right: auto
+        margin-right: auto;
+
+        @include xl{
+            display: none;
+        }
     }
 
   
     
 }
+
+.minibox{
+    @include xl{
+        width:40%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "lo1 lo2 lo3";
+
+        .box3{
+            grid-area:lo1;
+            .descname{
+                justify-content: left;
+            }
+        }
+
+        .box4{
+            grid-area: lo2;
+            
+        }
+
+        .box5{
+            grid-area: lo3;
+        }
+    }
+}
+
+.box4{
+    background-color: $dark-orange;
+
+}
+
+.box5{
+    background-color: $dark-orange;
+}
+
 
 
 .textbox{
@@ -61,14 +101,7 @@
     border: 2px solid $darker-orange;
     padding: 24px 8px 32px 8px;
 
-    ul{
-    
-        li{
-            list-style: none;
-            margin-bottom: 8px;
-        }
-    }
-
+   
 
     p{
         
@@ -81,6 +114,11 @@
         color: $black;
         font-family:"Manrope", sans-serif;
         font-size: 14px; 
+        
+        list-style-position: inside;
+        margin-bottom: 8px;
+
+
 
     }
 
@@ -110,19 +148,38 @@
     grid-template-areas: 
     "d1 d2";
 
+    @include xl{
+        display: none;
+    }
+
+    
 }
 
 
 .boxhidden{
     display: none;
+    
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 
 .moreabout{
+    
 
     ul{
     
@@ -190,4 +247,41 @@
    
    }
 
+   
+
+
+   
+  
+
+}
+
+.moreabout{
+    .content{
+        ul{
+            @include xl{
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-areas: 
+                "p1 p1 p2 p2 p3 p3"
+                ". p4 p4 p4 p4 .";
+            
+                .handle{
+                    grid-area: p1;
+                   }
+                
+                   .blade{
+                    grid-area: p2;
+                   }
+                
+                   .length{
+                    grid-area: p3;
+                   }
+                
+                   .full{
+                    grid-area: p4;
+                   
+                   }
+               }
+        }
+    }
 }

@@ -8,10 +8,15 @@
     background-color: $gray-peach;
     padding-top: 24px;
   
-
+    @include xl{
+        padding-left:48px;
+        padding-right: 48px;
+        padding-bottom: 48px;
+    }
  
 
     .content{
+        
         img{
             max-width: 100%; ;
         }
@@ -28,11 +33,24 @@
             img{
                 margin-right: 12px;
             }
+
+            @include xl{
+                display: none;
+            }
         }
 
 
         .hiddenimg{
             display: none;
+
+            @include xl{
+                display: initial;
+
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                margin-top: 24px;
+                gap: 1em;
+            }
         }
 
     
@@ -72,6 +90,14 @@
                 color: $black;
                 font-family:"Mukta", sans-serif;
                 font-size: 28px; 
+
+                @include xl{
+                    
+                        color: $black;
+                        font-family:"Manrope", sans-serif;
+                        font-size: 38px; 
+                        
+                }
                 
             }
 
@@ -100,9 +126,24 @@
                 margin: 16px;
         }
 
+.main-button{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "ee1 ."
+    "ee2 ee2";
+
+    .quant{
+        grid-area: ee1;
+    }
+
+    .addcart{
+        grid-area: ee2
+    }
+}
+
 
         .quant{
-            width: 50%;
             margin-bottom: 16px;
 
             display: grid;
@@ -117,7 +158,14 @@
             img.right{
                 margin-left: auto;
             }
+
+            @include xl{
+                display: initial;
+
+            }
         }
+
+       
 
         
 
@@ -130,7 +178,83 @@
 }
 
 
+
 hr.new2{
     border: 1px solid $darker-orange;
    
+}
+
+
+.main{
+    .content{
+        @include xl{
+            display: grid;
+            gap: 3em;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 
+            "yy1 yy2"
+            "yy1 yy2";
+
+
+            .left{
+                grid-area: yy1;
+            }
+
+            .right{
+                grid-area: yy2;
+                padding: 8px;
+
+
+               
+
+
+            }
+
+            .main-button{
+                margin-top: 48px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1em;
+                    grid-template-areas: 
+                    "ee1 ee2 ee2"
+                    ;
+                
+                    .quant{
+                        grid-area: ee1;
+                    }
+                
+                    .addcart{
+                        grid-area: ee2
+                    }
+                }
+
+                ul{
+                    li{
+                        margin-top: 48px;
+                    }
+                }
+                
+
+
+                .title{
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
+
+                h3{
+                color: $black;
+                font-family:"Mukta", sans-serif;
+                font-size: 28px; 
+                }
+
+               
+            }
+            
+
+
+         
+
+  
+    }
 }

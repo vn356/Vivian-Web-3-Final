@@ -1,25 +1,15 @@
+        window.addEventListener("load", () => {
+            document.body.classList.remove("preload");
+        });
 
-let burgerBtn = document.querySelector("#burger-btn");
-let mainMenu = document.querySelector("#main-menu");
+        document.addEventListener("DOMContentLoaded", () => {
+            const nav = document.querySelector(".nav");
 
-let canSeeMenu = false;
+            document.querySelector("#burger-btn").addEventListener("click", () => {
+                nav.classList.add("nav--open");
+            });
 
-burgerBtn.addEventListener("click", () => {
-    console.log(canSeeMenu);
-
-    if(!canSeeMenu){
-        mainMenu.classList.add("show-menu");
-        canSeeMenu = true;
-    }else{
-        mainMenu.classList.remove("show-menu");
-        canSeeMenu = false;
-    }
-})
-
-
-let closeBtn = document.querySelector("#close-btn");
-
-closeBtn.addEventListener("click", () => {
-        mainMenu.classList.remove("show-menu");
-        canSeeMenu = false;
-})
+            document.querySelector(".nav__overlay").addEventListener("click", () => {
+                nav.classList.remove("nav--open");
+            });
+        });

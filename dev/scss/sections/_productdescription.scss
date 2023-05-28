@@ -61,28 +61,8 @@
 
 .minibox{
     @include xl{
-        width:40%;
-        
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: 
-        "lo1 lo2 lo3";
+        width: 100%;
 
-        .box3{
-            grid-area:lo1;
-            .descname{
-                justify-content: left;
-            }
-        }
-
-        .box4{
-            grid-area: lo2;
-            
-        }
-
-        .box5{
-            grid-area: lo3;
-        }
     }
 }
 
@@ -165,6 +145,69 @@
 
 
 
+
+.boxx{
+    @include xl{
+      
+        
+        display: grid;
+        column-gap: 0;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "lo1 lo2 lo3";
+
+        .box3{
+            grid-area:lo1;
+            
+        }
+
+        .box4{
+            grid-area: lo2;
+            
+        }
+
+        .box5{
+            grid-area: lo3;
+        }
+    }
+}
+
+
+.barbox{
+    display: none;
+    @include xl{
+        display: initial;
+        display: grid;
+        column-gap: 0;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "lo1 lo2 lo3";
+
+        .box3{
+            grid-area:lo1;
+            
+        }
+
+        .box4{
+            grid-area: lo2;
+            
+        }
+
+        .box5{
+            grid-area: lo3;
+        }
+
+
+        margin-right: 270px;
+    }
+}
+
+
+.boxhide{
+    @include xl{
+        display: none;
+    }
+}
 
 
 

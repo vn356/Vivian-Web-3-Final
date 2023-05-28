@@ -533,7 +533,7 @@ textarea {
   font-family: "Manrope", sans-serif;
   font-size: 16px;
   text-decoration: none;
-  padding: 12px 15px;
+  padding: 20px 15px;
   border-bottom: 1px solid #281407;
   justify-self: end;
 }
@@ -1043,22 +1043,7 @@ hr.new2 {
 
 @media (min-width: 1200px) {
   .minibox {
-    width: 40%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "lo1 lo2 lo3";
-  }
-  .minibox .box3 {
-    grid-area: lo1;
-  }
-  .minibox .box3 .descname {
-    justify-content: left;
-  }
-  .minibox .box4 {
-    grid-area: lo2;
-  }
-  .minibox .box5 {
-    grid-area: lo3;
+    width: 100%;
   }
 }
 
@@ -1107,6 +1092,53 @@ hr.new2 {
 
 .boxhidden {
   display: none;
+}
+
+@media (min-width: 1200px) {
+  .boxx {
+    display: grid;
+    column-gap: 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "lo1 lo2 lo3";
+  }
+  .boxx .box3 {
+    grid-area: lo1;
+  }
+  .boxx .box4 {
+    grid-area: lo2;
+  }
+  .boxx .box5 {
+    grid-area: lo3;
+  }
+}
+
+.barbox {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .barbox {
+    display: initial;
+    display: grid;
+    column-gap: 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "lo1 lo2 lo3";
+    margin-right: 270px;
+  }
+  .barbox .box3 {
+    grid-area: lo1;
+  }
+  .barbox .box4 {
+    grid-area: lo2;
+  }
+  .barbox .box5 {
+    grid-area: lo3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .boxhide {
+    display: none;
+  }
 }
 
 .moreabout {

@@ -8,8 +8,8 @@ header.container{
     background-color: $peach;
 
     .content{
-        padding-top: 32px;
-        padding-bottom: 32px;
+        padding-top: 24px;
+        padding-bottom: 24px;
 
         justify-content: center;
 
@@ -17,19 +17,24 @@ header.container{
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-areas: 
-        "hi1 hi2 hi2 . hi3";
+        "hi1 hi2 hi2 . hi3"
+        ;
 
 
         .burger{
             grid-area: hi1;
+            height: 30px;
+            
+            
         }
 
         .logo{
             grid-area: hi2;
         }
 
-        .cart{
+        .righticons{
             grid-area: hi3;
+            padding-top: 8px;
         }
 
         a.person{
@@ -41,14 +46,96 @@ header.container{
             span{
                 display:none;
             }
+            display:flex;
+            justify-content: end;
+            img{
+                height: 30px;
+        
+            }
         }
        
+        .burgermenu{
+            padding-top: 8px;
 
+
+            @include xl{
+                display: none;
+            }
+        
+        }
 
 
 
         .mainsearch{
             display:none;
+            
+        }
+    }
+}
+
+
+header.container{
+    .content{
+        @include xl{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: 
+            "op1 op2 op3";
+
+            .logo{
+                grid-area: op1;
+                height: 80px;
+
+            }
+
+            .mainsearch{
+                display: initial;
+                grid-area: op2;
+                padding-top: 24px;
+            }
+
+            .righticons{
+                display: initial;
+                grid-area: op3;
+                justify-self: end;
+                padding-top: 24px;
+               
+
+
+                a.cart{
+                    display: initial;
+                    text-decoration: none;
+                    span{
+                        display: initial;
+                        
+
+                        color: $black;
+                        font-family:"Manrope", sans-serif;
+                        font-size: 16px;
+                        padding-left: 8px;
+
+                        
+
+
+                    }
+                    padding-right: 24px;
+                }
+
+                a.person{
+                    display: initial;
+                    text-decoration: none;
+
+                    span{
+                        color: $black;
+                        font-family:"Manrope", sans-serif;
+                        font-size: 16px;
+                        padding-left: 8px;
+
+                    }
+                }
+            }
+
+
         }
     }
 }

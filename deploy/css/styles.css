@@ -336,7 +336,7 @@ template {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". content .";
 }
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .container {
     display: grid;
     grid-template-columns: 64px auto 64px;
@@ -1444,6 +1444,31 @@ hr.new2 {
 /* =============
     Thank you
 ============= */
+.thanksection .content {
+  background-color: #DED2CC;
+  border: 3px solid #9E5C43;
+  border-radius: 8px;
+  margin-top: 48px;
+}
+.thanksection .content .insidebox {
+  text-align: center;
+  margin: 16px 16px 36px 16px;
+}
+.thanksection .content .insidebox h1 {
+  color: #281407;
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.thanksection .content .insidebox h3 {
+  color: #281407;
+  font-family: "Mukta", sans-serif;
+  font-size: 20px;
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
 /* =============
     Checkout
 ============= */

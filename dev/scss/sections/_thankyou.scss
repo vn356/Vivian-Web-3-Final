@@ -47,3 +47,23 @@
 
     }
 }
+
+.thanksection{
+    
+    
+    @include xl{
+
+        display:grid;
+        grid-template-columns: auto 1150px auto;
+        grid-template-areas: 
+         ". content .";
+
+
+
+        .content{
+        
+        padding: 48px;
+        margin: 48px;
+    }
+}
+}

@@ -144,23 +144,46 @@
 
 
         .quant{
-            margin-bottom: 16px;
+            margin-bottom: 24px;
+            padding-left: 16px;
 
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-template-areas: auto;
-
+            grid-template-areas: 
+            "sso1 sso2 sso3";
+            
+            .quantity1{
+                grid-area: sso2;
+            }
 
             img.left{
+                grid-area: sso1;
                 margin-right: auto;
             }
 
             img.right{
+                grid-area: sso3;
                 margin-left: auto;
             }
 
             @include xl{
-                display: initial;
+                
+                img.left{
+                    align-self: center;
+                }
+
+                .quantity1{
+                    align-self: center;
+
+                }
+
+                img.right{
+                    align-self: center;
+                    padding: 0;
+
+                }
+                
+                
 
             }
         }
@@ -247,6 +270,8 @@ hr.new2{
                 font-family:"Mukta", sans-serif;
                 font-size: 28px; 
                 }
+                
+                
 
                
             }
@@ -256,5 +281,43 @@ hr.new2{
          
 
   
+    }
+}
+
+
+
+.main{
+    .content{
+        @include xl{
+            .topright1{
+                display: grid;
+                grid-template-columns: 80% 20%;
+                grid-template-areas: 
+                "title heart"
+                "pricetag starsrate"
+                ;
+
+                img.heart{
+                    margin: 0;
+                }
+
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
     }
 }

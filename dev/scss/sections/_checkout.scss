@@ -3,7 +3,7 @@
 ============= */
 
 
-.cart{
+.cartsection{
 
     margin-top: 36px;
 
@@ -12,7 +12,7 @@
         border: 1px solid $darker-orange;
 
 
-        padding: 16px;
+        padding: 36px 16px 24px 16px;
 
         div.topgrid{
             display: grid;
@@ -27,24 +27,78 @@
                 max-width: 100%;
             }
 
-
-
             
+
+            .insidegrid{
+                margin-top: 24px;
+                margin-bottom: 24px;
+                margin-left: 16px;
+                gap: 1em;
+
+
+                grid-area: ii3;
+                display: grid;
+                grid-template-columns: 60% 40%;
+                grid-template-areas: 
+                "drop h2";
+
+                h2{
+                    color: $black;
+                    font-family:"Manrope", sans-serif;
+                    font-size: 24px;
+                    justify-self: center;
+                    line-height: 40px;
+                    
+                }
+
+                .drop{
+                
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-areas: 
+                    "sso1 sso2 sso3";
+                
+                    .quantity1{
+                        grid-area: sso2;
+                    }
+    
+                    img.left{
+                        grid-area: sso1;
+                        margin-right: auto;
+                    }
+    
+                    img.right{
+                        grid-area: sso3;
+                        margin-left: auto;
+                    }
+                }
+            }
+
+
+        
 
 
             h3{
                 color: $black;
                 font-family:"Manrope", sans-serif;
                 font-size: 16px; 
+                margin-left: 24px;
                 
             }
 
-            h2{
-                color: $black;
-                font-family:"Manrope", sans-serif;
-                font-size: 24px;
-            }
+
+            
     }
+
+    hr.new00{
+        border: 1px solid $light-gray;
+        margin-bottom: 36px;
+
+
+    }
+
+
+
 }
     
 }

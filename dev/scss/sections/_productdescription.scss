@@ -103,6 +103,10 @@
 
     }
 
+    @include xl{
+        padding: 48px;
+    }
+
     
 
 }
@@ -185,16 +189,19 @@
 
         .box3{
             grid-area:lo1;
+            background-color: $darker-orange;
             
         }
 
         .box4{
             grid-area: lo2;
+            background-color: $peach;
             
         }
 
         .box5{
             grid-area: lo3;
+            background-color: $peach;
         }
 
 

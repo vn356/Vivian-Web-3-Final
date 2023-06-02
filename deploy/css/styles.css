@@ -432,6 +432,7 @@ template {
   margin-bottom: 32px;
   border: none;
   text-decoration: none;
+  line-height: 30px;
 }
 
 .searchbar {
@@ -445,6 +446,7 @@ template {
   padding: 8px;
   text-align: left;
   margin-bottom: 16px;
+  line-height: 24px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: auto;
@@ -564,6 +566,7 @@ textarea {
 ============= */
 header.container {
   background-color: #E0B59D;
+  padding-top: 16px;
 }
 header.container .content {
   padding-top: 24px;
@@ -582,7 +585,7 @@ header.container .content .logo {
 }
 header.container .content .righticons {
   grid-area: hi3;
-  padding-top: 8px;
+  height: 20px;
 }
 header.container .content a.person {
   display: none;
@@ -595,7 +598,7 @@ header.container .content a.cart span {
   display: none;
 }
 header.container .content a.cart img {
-  height: 30px;
+  height: 40px;
 }
 header.container .content .burgermenu {
   padding-top: 8px;
@@ -840,20 +843,33 @@ footer div.footer-icons a img {
   grid-area: ee2;
 }
 .main .content .quant {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
+  padding-left: 16px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: auto;
+  grid-template-areas: "sso1 sso2 sso3";
+}
+.main .content .quant .quantity1 {
+  grid-area: sso2;
 }
 .main .content .quant img.left {
+  grid-area: sso1;
   margin-right: auto;
 }
 .main .content .quant img.right {
+  grid-area: sso3;
   margin-left: auto;
 }
 @media (min-width: 1200px) {
-  .main .content .quant {
-    display: initial;
+  .main .content .quant img.left {
+    align-self: center;
+  }
+  .main .content .quant .quantity1 {
+    align-self: center;
+  }
+  .main .content .quant img.right {
+    align-self: center;
+    padding: 0;
   }
 }
 
@@ -899,6 +915,17 @@ hr.new2 {
     color: #000;
     font-family: "Mukta", sans-serif;
     font-size: 28px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main .content .topright1 {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-areas: "title heart" "pricetag starsrate";
+  }
+  .main .content .topright1 img.heart {
+    margin: 0;
   }
 }
 
@@ -1072,6 +1099,11 @@ hr.new2 {
   list-style-position: inside;
   margin-bottom: 8px;
 }
+@media (min-width: 1200px) {
+  .textbox {
+    padding: 48px;
+  }
+}
 
 .miniboxclose {
   background-color: #B16D54;
@@ -1126,12 +1158,15 @@ hr.new2 {
   }
   .barbox .box3 {
     grid-area: lo1;
+    background-color: #9E5C43;
   }
   .barbox .box4 {
     grid-area: lo2;
+    background-color: #E0B59D;
   }
   .barbox .box5 {
     grid-area: lo3;
+    background-color: #E0B59D;
   }
 }
 
@@ -1235,6 +1270,22 @@ hr.new2 {
   }
   .reviews .content .dropbuttons .dropdowns {
     grid-area: cc1;
+  }
+  .reviews .content .dropbuttons .dropdowns .leftstar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "auto";
+  }
+  .reviews .content .dropbuttons .dropdowns .leftstar img {
+    justify-self: end;
+  }
+  .reviews .content .dropbuttons .dropdowns .rightrecent {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-areas: "auto";
+  }
+  .reviews .content .dropbuttons .dropdowns .rightrecent img {
+    justify-self: end;
   }
   .reviews .content .dropbuttons .search2 {
     grid-area: cc2;
@@ -1419,7 +1470,7 @@ hr.new2 {
 }
 .fromcustomer .content .imgig .tagus {
   grid-area: i4;
-  margin-top: 16px;
+  margin-top: 36px;
 }
 .fromcustomer .content .imgig .tagus p {
   background-color: #E0B59D;
@@ -1484,30 +1535,63 @@ hr.new2 {
 /* =============
     Checkout
 ============= */
-.cart {
+.cartsection {
   margin-top: 36px;
 }
-.cart .content {
+.cartsection .content {
   background-color: #DED2CC;
   border: 1px solid #9E5C43;
-  padding: 16px;
+  padding: 36px 16px 24px 16px;
 }
-.cart .content div.topgrid {
+.cartsection .content div.topgrid {
   display: grid;
   grid-template-columns: 30% 70%;
   grid-template-areas: "ii1 ii2" "ii1 ii3";
 }
-.cart .content div.topgrid img {
+.cartsection .content div.topgrid img {
   grid-area: ii1;
   max-width: 100%;
 }
-.cart .content div.topgrid h3 {
-  color: #000;
-  font-family: "Manrope", sans-serif;
-  font-size: 16px;
+.cartsection .content div.topgrid .insidegrid {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 16px;
+  gap: 1em;
+  grid-area: ii3;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: "drop h2";
 }
-.cart .content div.topgrid h2 {
+.cartsection .content div.topgrid .insidegrid h2 {
   color: #000;
   font-family: "Manrope", sans-serif;
   font-size: 24px;
+  justify-self: center;
+  line-height: 40px;
+}
+.cartsection .content div.topgrid .insidegrid .drop {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "sso1 sso2 sso3";
+}
+.cartsection .content div.topgrid .insidegrid .drop .quantity1 {
+  grid-area: sso2;
+}
+.cartsection .content div.topgrid .insidegrid .drop img.left {
+  grid-area: sso1;
+  margin-right: auto;
+}
+.cartsection .content div.topgrid .insidegrid .drop img.right {
+  grid-area: sso3;
+  margin-left: auto;
+}
+.cartsection .content div.topgrid h3 {
+  color: #000;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  margin-left: 24px;
+}
+.cartsection .content hr.new00 {
+  border: 1px solid #585858;
+  margin-bottom: 36px;
 }

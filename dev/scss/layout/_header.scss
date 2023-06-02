@@ -6,6 +6,7 @@
 header.container{
 
     background-color: $peach;
+    padding-top: 16px;
 
     .content{
         padding-top: 24px;
@@ -34,7 +35,10 @@ header.container{
 
         .righticons{
             grid-area: hi3;
-            padding-top: 8px;
+            height: 20px;
+            
+
+            
         }
 
         a.person{
@@ -49,7 +53,7 @@ header.container{
             display:flex;
             justify-content: end;
             img{
-                height: 30px;
+                height: 40px;
         
             }
         }

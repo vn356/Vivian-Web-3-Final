@@ -45,6 +45,25 @@
 
                 .dropdowns{
                     grid-area: cc1;
+                    .leftstar{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-template-areas: "auto";
+                        img{
+                            justify-self: end;
+                        }
+                        
+                    }
+
+                    .rightrecent{
+                        display: grid;
+                        grid-template-columns: 80% 20%;
+                        grid-template-areas: "auto";
+                        img{
+                            justify-self: end;
+                        }
+                        
+                    }
                 }
 
                 .search2{
@@ -153,6 +172,7 @@
 
 
     .dropdowns{
+        
         margin-bottom: 24px;
         display: flex;
         justify-content: space-between;
@@ -164,12 +184,14 @@
 
         .leftstar{
             grid-area: b1;
-            
+         
         }
 
         .rightrecent{
             grid-area: b2;
         }
+
+        
     }
 
     
@@ -338,7 +360,7 @@
 
             .tagus{
                 grid-area: i4;
-                margin-top: 16px;
+                margin-top: 36px;
 
                 p{
                     background-color: $peach;
@@ -350,6 +372,7 @@
                     filter: drop-shadow(0px 4px 4px $black);
                     
                 }
+                
             }
 
             @include xl{

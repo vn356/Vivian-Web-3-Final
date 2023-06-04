@@ -10,6 +10,7 @@
     .content{
         background-color: $gray-peach;
         border: 1px solid $darker-orange;
+        border-radius: 8px;
 
 
         padding: 36px 16px 24px 16px;
@@ -97,8 +98,277 @@
 
     }
 
+    form{
+
+       
+        display: flex;
+      
+        
+
+            input{
+                color: $gray;
+                font-family:"Mukta", sans-serif;
+                font-size: 16px;
+                
+                line-height: 40px;
+                padding-left: 12px;
+                padding-right: 16px;
+
+
+                border: 1px solid $brown;
+                border-radius: 2px;
+                
+
+            
+
+
+            }
+
+            ::placeholder{
+                color: $gray;
+                opacity: 1;
+            }
+
+            ::-ms-input-placeholder{
+                color: $gray;
+            }
+
+            button{
+                color: $white;
+                font-family:"Manrope", sans-serif;
+                font-size: 16px;
+
+                background-color: $dark-orange;
+                border: none;
+                border-radius: 6px;
+
+
+                margin-left: 24px;
+                line-height: 40px;
+                padding-left: 48px;
+                padding-right: 48px;
+                
+
+                
+            }
+
+            margin-bottom: 56px;
+            
+
+    }       
+
+
+    div.prices{
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "auto";
+
+        row-gap: 1em;
+
+
+        h4{
+            color: $gray;
+            font-family:"Mukta", sans-serif;
+            font-size: 14px;
+
+        }
+        h3{
+            color: $black;
+            font-family:"Mukta", sans-serif;
+            font-size: 16px;
+            text-align: end;
+
+        }
+        h2{
+            color: $black;
+            font-family:"Manrope", sans-serif;
+            font-size: 24px;
+
+        }
+
+        h2.pricing{
+            color: $black;
+            font-family:"Manrope", sans-serif;
+            font-size: 24px;
+            text-align: end;
+
+
+        }
+
+    }
+
 
 
 }
     
+}
+
+
+
+.dots{
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+
+
+
+
+
+
+.enterinputs{
+    .content{
+        margin-bottom: 56px;
+
+
+
+    div.deliverybox{
+        max-width: 100%;
+        
+        p{
+            background-color: $peach;
+            line-height: 40px;
+            padding-left: 16px;
+            border-bottom: 2px solid $darker-orange;
+
+
+            color: $brown;
+            font-family:"Mukta", sans-serif;
+            font-size: 16px;
+            
+        }
+    
+    }
+
+
+    form{
+        background-color: $white;
+       
+        max-width: 100%;
+        
+
+    
+        display: flex;
+        flex-direction: column;
+
+        div.information{
+            flex-direction: row;
+        }
+
+       
+
+
+        input{
+            color: $gray;
+            font-family:"Mukta", sans-serif;
+            font-size: 16px;
+            
+            line-height: 40px;
+            padding-left: 12px;
+            padding-right: 16px;
+
+
+            border: 1px solid $brown;
+            border-radius: 2px;
+
+           
+    }
+
+
+}
+
+}
+
+.form-body{
+    padding-left: 8px;
+    padding-right: 8px;
+
+
+    border: 2px solid $darker-orange;
+
+    .row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 36px;
+        margin-top: 24px;
+
+        
+    }
+
+    .column{
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+
+
+        input{
+            width: 340px;
+           
+
+
+        }
+    }
+
+    .row-button{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: ". button";
+
+        margin-bottom: 32px;
+        margin-top: 44px;
+
+
+
+        button{
+            grid-area: button;
+            background-color: $dark-orange;
+            color: $white;
+            font-family:"Manrope", sans-serif;
+            font-size: 16px;
+            width: 100%;
+            
+        
+            border-radius: 2px;
+            padding: 8px;
+           
+        
+            border: none;
+            text-decoration: none;
+        
+            line-height: 30px;
+        }
+        
+    }
+
+}
+}
+
+
+
+.checkoutpage{
+    @include xl{
+
+
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "ccc1 ccc2"
+        "ccc3 ccc2";
+
+        .bag-cart{
+            grid-area: ccc2;
+        }
+
+        .dots2{
+            grid-area: ccc1;
+        }
+
+        .deliverybox{
+            grid-area: ccc3;
+        }
+
+    }
 }

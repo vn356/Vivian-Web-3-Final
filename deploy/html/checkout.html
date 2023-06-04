@@ -93,12 +93,13 @@
 
 <!--CHECKOUT -->
 
-
+<section class="checkoutpage">
 
 <!--cart items-->
 
 <section class="cartsection container">
-  <div class="content">
+  <div class=" content">
+    <div class="bag-cart">
     <div class="topgrid">
     <img src="../img/main/saw1.png" alt="saw image">
     <h3>Dovetail Saw with Cherry Handle</h3>
@@ -117,11 +118,11 @@
 <div>
   <form action="#">
     <input type="text" placeholder="Discount Code" name="discount code">
-      <input type="button" value="Apply">
+    <button type="submit">Apply</button>
   </form>
 </div>
 
-<div>
+<div class="prices">
   <h4>Subtotal</h4>
   <h3>$175</h3>
 
@@ -129,9 +130,10 @@
   <h3>Calclated at next step</h3>
 
   <h2>Total</h2>
-  <h2>$175</h2>
+  <h2 class="pricing">$175</h2>
 </div>
 
+</div>
 </div>
 
 
@@ -140,9 +142,9 @@
 
 <!--bar-->
 
-<section>
-  <div>
-    <img src="../img/icons/dots.svg" alt="number">
+<section class="container">
+  <div class="dots content">
+    <img class="dots2" src="../img/icons/dots.svg" alt="number">
 
   </div>
 </section>
@@ -151,20 +153,38 @@
 
 <!--inputs-->
 
-<section>
+<section class="enterinputs container">
+  <div class="content">
 
-  <div>
+  <div class="deliverybox">
     <p>1. Delivery</p>
     <form action="#">
-      <input type="text" placeholder="First Name">
-      <input type="text" placeholder="Last Name">
-      <input type="text" placeholder="E-mail Address">
-      <input type="text" placeholder="Phone Number">
-      <input type="text" placeholder="Country/ Region">
-      <input type="text" placeholder="Address">
-
-      <button type="type">Next</button>
+      <div class="form-body">
+        <div class="row">
+          <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+        </div>
+        <div class="column">
+          <input type="text" placeholder="E-mail Address">
+        
+          <input type="text" placeholder="Phone Number">
+        
+          <input type="text" placeholder="Country/ Region">
+        
+          <input type="text" placeholder="Address">
+        </div>
+      
+    
+      <div class="row-button">
+      <button type="submit">Next</button>
+    </div>
   </div>
+
+      </form>
+  </div>
+</div>
+
+</section>
 
 </section>
 

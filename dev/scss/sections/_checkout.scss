@@ -12,6 +12,12 @@
         border: 1px solid $darker-orange;
         border-radius: 8px;
 
+        @include xl{
+            border: 3px solid $darker-orange;
+            border-radius: 8px;
+            height: 500px;
+        }
+
 
         padding: 36px 16px 24px 16px;
 
@@ -58,6 +64,9 @@
                     grid-template-columns: repeat(3, 1fr);
                     grid-template-areas: 
                     "sso1 sso2 sso3";
+                    @include xl{
+                        width: 150px;
+                    }
                 
                     .quantity1{
                         grid-area: sso2;
@@ -167,6 +176,10 @@
 
         row-gap: 1em;
 
+        @include xl{
+            row-gap: 2em;
+        }
+
 
         h4{
             color: $gray;
@@ -222,6 +235,10 @@
     .content{
         margin-bottom: 56px;
 
+        @include xl{
+            margin-bottom: 72px;
+        }
+
 
 
     div.deliverybox{
@@ -238,6 +255,10 @@
             font-family:"Mukta", sans-serif;
             font-size: 16px;
             
+
+            @include xl{
+                width: 60%;
+            }
         }
     
     }
@@ -274,6 +295,8 @@
             border-radius: 2px;
 
            
+
+           
     }
 
 
@@ -285,6 +308,11 @@
     padding-left: 8px;
     padding-right: 8px;
 
+    @include xl{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
 
     border: 2px solid $darker-orange;
 
@@ -295,6 +323,21 @@
         margin-bottom: 36px;
         margin-top: 24px;
 
+        @include xl{
+
+            gap: 2em;
+            margin-bottom: 48px;
+            
+            .firstname{
+                width: 50%;
+
+            }
+
+            .lastname{
+                width:50%;
+            }
+        }
+
         
     }
 
@@ -303,10 +346,17 @@
         flex-direction: column;
         row-gap: 24px;
 
+        @include xl{
+            row-gap: 36px;
+        }
+
 
         input{
             width: 340px;
            
+            @include xl{
+                width: 650px;
+            }
 
 
         }
@@ -339,6 +389,11 @@
             text-decoration: none;
         
             line-height: 30px;
+
+            @include xl{
+                width: 200px;
+                margin-left: auto;
+            }
         }
         
     }
@@ -351,24 +406,51 @@
 .checkoutpage{
     @include xl{
 
+        margin-top: 64px;
 
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 
         "ccc1 ccc2"
         "ccc3 ccc2";
 
-        .bag-cart{
+        .cartsection{
             grid-area: ccc2;
+
+            .topgrid{
+                margin: 24px;
+                margin-bottom: 40px;
+            }
+
+
         }
+
+
+        hr.new00{
+            margin: 24px;
+        }
+
+        div.discountcode{
+            margin: 24px;
+
+            form{
+                input{
+                    width: 80%;
+                }
+            }
+        }
+
+      
 
         .dots2{
             grid-area: ccc1;
+            margin-bottom: 36px;
         }
 
         .deliverybox{
             grid-area: ccc3;
         }
+       
 
     }
 }

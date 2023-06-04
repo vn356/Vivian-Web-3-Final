@@ -1559,6 +1559,13 @@ hr.new2 {
   border-radius: 8px;
   padding: 36px 16px 24px 16px;
 }
+@media (min-width: 1200px) {
+  .cartsection .content {
+    border: 3px solid #9E5C43;
+    border-radius: 8px;
+    height: 500px;
+  }
+}
 .cartsection .content div.topgrid {
   display: grid;
   grid-template-columns: 30% 70%;
@@ -1589,6 +1596,11 @@ hr.new2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "sso1 sso2 sso3";
+}
+@media (min-width: 1200px) {
+  .cartsection .content div.topgrid .insidegrid .drop {
+    width: 150px;
+  }
 }
 .cartsection .content div.topgrid .insidegrid .drop .quantity1 {
   grid-area: sso2;
@@ -1650,6 +1662,11 @@ hr.new2 {
   grid-template-areas: "auto";
   row-gap: 1em;
 }
+@media (min-width: 1200px) {
+  .cartsection .content div.prices {
+    row-gap: 2em;
+  }
+}
 .cartsection .content div.prices h4 {
   color: #474747;
   font-family: "Mukta", sans-serif;
@@ -1681,6 +1698,11 @@ hr.new2 {
 .enterinputs .content {
   margin-bottom: 56px;
 }
+@media (min-width: 1200px) {
+  .enterinputs .content {
+    margin-bottom: 72px;
+  }
+}
 .enterinputs .content div.deliverybox {
   max-width: 100%;
 }
@@ -1692,6 +1714,11 @@ hr.new2 {
   color: #281407;
   font-family: "Mukta", sans-serif;
   font-size: 16px;
+}
+@media (min-width: 1200px) {
+  .enterinputs .content div.deliverybox p {
+    width: 60%;
+  }
 }
 .enterinputs .content form {
   background-color: #fff;
@@ -1717,6 +1744,12 @@ hr.new2 {
   padding-right: 8px;
   border: 2px solid #9E5C43;
 }
+@media (min-width: 1200px) {
+  .enterinputs .form-body {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
 .enterinputs .form-body .row {
   display: flex;
   flex-direction: row;
@@ -1724,13 +1757,35 @@ hr.new2 {
   margin-bottom: 36px;
   margin-top: 24px;
 }
+@media (min-width: 1200px) {
+  .enterinputs .form-body .row {
+    gap: 2em;
+    margin-bottom: 48px;
+  }
+  .enterinputs .form-body .row .firstname {
+    width: 50%;
+  }
+  .enterinputs .form-body .row .lastname {
+    width: 50%;
+  }
+}
 .enterinputs .form-body .column {
   display: flex;
   flex-direction: column;
   row-gap: 24px;
 }
+@media (min-width: 1200px) {
+  .enterinputs .form-body .column {
+    row-gap: 36px;
+  }
+}
 .enterinputs .form-body .column input {
   width: 340px;
+}
+@media (min-width: 1200px) {
+  .enterinputs .form-body .column input {
+    width: 650px;
+  }
 }
 .enterinputs .form-body .row-button {
   display: grid;
@@ -1752,18 +1807,39 @@ hr.new2 {
   text-decoration: none;
   line-height: 30px;
 }
+@media (min-width: 1200px) {
+  .enterinputs .form-body .row-button button {
+    width: 200px;
+    margin-left: auto;
+  }
+}
 
 @media (min-width: 1200px) {
   .checkoutpage {
+    margin-top: 64px;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "ccc1 ccc2" "ccc3 ccc2";
   }
-  .checkoutpage .bag-cart {
+  .checkoutpage .cartsection {
     grid-area: ccc2;
+  }
+  .checkoutpage .cartsection .topgrid {
+    margin: 24px;
+    margin-bottom: 40px;
+  }
+  .checkoutpage hr.new00 {
+    margin: 24px;
+  }
+  .checkoutpage div.discountcode {
+    margin: 24px;
+  }
+  .checkoutpage div.discountcode form input {
+    width: 80%;
   }
   .checkoutpage .dots2 {
     grid-area: ccc1;
+    margin-bottom: 36px;
   }
   .checkoutpage .deliverybox {
     grid-area: ccc3;

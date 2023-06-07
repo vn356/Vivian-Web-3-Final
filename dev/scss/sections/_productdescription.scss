@@ -48,8 +48,8 @@
 
     .descarrow{
         grid-area: d2;
-        margin-right: auto;
-
+        display: block;
+        margin-left: auto;
         @include xl{
             display: none;
         }

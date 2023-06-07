@@ -92,8 +92,40 @@
                 }
             }
             
+            @include lg{
+                padding-top: 72px;
 
-            @include xl{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-areas: 
+                "tt1 tt2" 
+                "tt3 tt4";
+
+              
+
+                .dovetail{
+                    grid-area: tt1;
+                }
+
+                .carcass{
+                    grid-area: tt2;
+                }
+
+                .tenon{
+                    display: initial;
+                    grid-area: tt3;
+                }
+
+                .tenon2{
+                    display: initial;
+                    grid-area: tt4;
+                }
+            }
+
+
+
+
+            @include xxl{
                 padding-top: 72px;
 
                 display: flex;

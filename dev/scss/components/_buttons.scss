@@ -21,6 +21,22 @@
 
 
 
+.searchinput{
+    text-decoration: none;
+    background-color: $white;
+    color: $black;
+    font-family:"Manrope", sans-serif;
+    font-size: 16px;
+    width: 90%;
+
+    border: 2px solid $dark-orange;
+    border-radius: 2px;
+    padding: 8px;
+    text-align: left;
+    margin-bottom: 16px; 
+    
+}
+
 .mini-search{
     background-color: $white;
     color: $black;
@@ -104,3 +120,40 @@
     
 
 }
+
+
+
+.searchbar-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    
+
+    border: 2px solid $dark-orange;
+        border-radius: 2px;
+        padding: 8px;
+        text-align: left;
+        margin-bottom: 16px; 
+        background-color: $white;
+    
+
+    .input-field {
+        background-color: $white;
+        color: $gray;
+        font-family:"Manrope", sans-serif;
+        font-size: 16px;
+        width: 100%;
+    
+        
+    
+        line-height: 24px;
+        border: none;
+        
+    
+        
+      }
+  }
+  
+  
+  
+  

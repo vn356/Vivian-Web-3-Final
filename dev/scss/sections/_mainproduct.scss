@@ -80,6 +80,10 @@
 
         div.pricetag{
 
+            @include xl{
+                display: none;
+            }
+
             margin-bottom: 16px;
             
             display: grid;
@@ -292,6 +296,7 @@ hr.new2{
     .content{
         @include xl{
             .topright1{
+                row-gap: 1em;
                 display: grid;
                 grid-template-columns: 80% 20%;
                 grid-template-areas: 
@@ -306,13 +311,14 @@ hr.new2{
                 }
 
 
-                .hearticon1{
-                    grid-area: aaaa2;
-                }
 
 
                 .numberprice{
                     grid-area: aaaa3;
+                    color: $black;
+                    font-family:"Manrope", sans-serif;
+                    font-size: 38px; 
+                    
                 }
 
                 .starsrate{
@@ -321,6 +327,8 @@ hr.new2{
 
                 img.heart{
                     margin: 0;
+                    margin-left: auto;
+
                 }
 
                
@@ -342,5 +350,14 @@ hr.new2{
 
 
         }
+    }
+}
+
+
+.hidesm{
+    display: none;
+
+    @include xl{
+        display: initial;
     }
 }

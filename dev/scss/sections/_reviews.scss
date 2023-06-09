@@ -58,13 +58,13 @@
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 grid-template-areas: 
-                "cc1 cc2 . cc4";
+                "ccc1 ccc2 . ccc4";
 
                 gap: 1em;
 
 
                 .dropdowns{
-                    grid-area: cc1;
+                    grid-area: ccc1;
                     .leftstar{
                         display: grid;
                         grid-template-columns: 1fr 1fr;
@@ -85,15 +85,20 @@
                         
                     }
                 }
-
-                .search2{
-                    grid-area: cc2;
+                form{
+                    width: 100%;
+                     .search2{
+                    grid-area: ccc2;
+                    
+                    align-items: center;
                 }
 
+                }
+               
                
 
                 .buttonreview{
-                    grid-area: cc4;
+                    grid-area: ccc4;
                     display: flex;
                     justify-content: end;
                 }

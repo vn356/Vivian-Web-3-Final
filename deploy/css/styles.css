@@ -396,6 +396,20 @@ template {
   width: 100%;
 }
 
+.searchinput {
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  width: 90%;
+  border: 2px solid #B16D54;
+  border-radius: 2px;
+  padding: 8px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
 .mini-search {
   background-color: #fff;
   color: #000;
@@ -453,6 +467,27 @@ template {
 }
 .searchbar img {
   justify-self: end;
+}
+
+.searchbar-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+  border: 2px solid #B16D54;
+  border-radius: 2px;
+  padding: 8px;
+  text-align: left;
+  margin-bottom: 16px;
+  background-color: #fff;
+}
+.searchbar-container .input-field {
+  background-color: #fff;
+  color: #474747;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  width: 100%;
+  line-height: 24px;
+  border: none;
 }
 
 /* =============
@@ -807,6 +842,11 @@ footer div.footer-icons a img {
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: auto;
 }
+@media (min-width: 1200px) {
+  .main .content div.pricetag {
+    display: none;
+  }
+}
 .main .content div.pricetag h2 {
   color: #000;
   font-family: "Mukta", sans-serif;
@@ -921,6 +961,7 @@ hr.new2 {
 
 @media (min-width: 1200px) {
   .main .content .topright1 {
+    row-gap: 1em;
     display: grid;
     grid-template-columns: 80% 20%;
     grid-template-areas: "aaaa1 aaaa2" "aaaa3 aaaa4";
@@ -928,17 +969,27 @@ hr.new2 {
   .main .content .topright1 .nameprod {
     grid-area: aaaa1;
   }
-  .main .content .topright1 .hearticon1 {
-    grid-area: aaaa2;
-  }
   .main .content .topright1 .numberprice {
     grid-area: aaaa3;
+    color: #000;
+    font-family: "Manrope", sans-serif;
+    font-size: 38px;
   }
   .main .content .topright1 .starsrate {
     grid-area: aaaa4;
   }
   .main .content .topright1 img.heart {
     margin: 0;
+    margin-left: auto;
+  }
+}
+
+.hidesm {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .hidesm {
+    display: initial;
   }
 }
 
@@ -976,6 +1027,9 @@ hr.new2 {
 }
 .otherproducts .content ul {
   text-align: center;
+}
+.otherproducts .content ul li img {
+  max-width: 100%;
 }
 .otherproducts .content ul li p {
   display: flex;
@@ -1317,11 +1371,11 @@ hr.new2 {
   .reviews .content .dropbuttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "cc1 cc2 . cc4";
+    grid-template-areas: "ccc1 ccc2 . ccc4";
     gap: 1em;
   }
   .reviews .content .dropbuttons .dropdowns {
-    grid-area: cc1;
+    grid-area: ccc1;
   }
   .reviews .content .dropbuttons .dropdowns .leftstar {
     display: grid;
@@ -1339,11 +1393,15 @@ hr.new2 {
   .reviews .content .dropbuttons .dropdowns .rightrecent img {
     justify-self: end;
   }
-  .reviews .content .dropbuttons .search2 {
-    grid-area: cc2;
+  .reviews .content .dropbuttons form {
+    width: 100%;
+  }
+  .reviews .content .dropbuttons form .search2 {
+    grid-area: ccc2;
+    align-items: center;
   }
   .reviews .content .dropbuttons .buttonreview {
-    grid-area: cc4;
+    grid-area: ccc4;
     display: flex;
     justify-content: end;
   }
